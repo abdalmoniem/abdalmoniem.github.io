@@ -74,7 +74,7 @@
                      }
 
                      el.removeClass('item-animate');
-                  },  k * 10, 'easeInOutExpo' );
+                  },  k * 25, 'easeInOutExpo' );
                });
             }, 100);
          }
@@ -238,19 +238,29 @@
    // Document on load.
    $(function() {
       fullHeight();
+
       counter();
+
       counterWayPoint();
+
       contentWayPoint();
+
       burgerMenu();
 
       clickMenu();
+
       // navActive();
+
       navigationSection();
+
       // windowScroll();
 
       mobileMenuOutsideClick();
+
       sliderMain();
+
       stickyFunction();
+
       owlCrouselFeatureSlide();
    });
 }());
