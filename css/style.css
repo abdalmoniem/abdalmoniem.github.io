@@ -11,6 +11,10 @@
 *	Edit this section
 *
 * ======================================================= */
+.disabled {
+  pointer-events:none; /* This makes it not clickable */
+  opacity:0.3;         /* This grays it out to look disabled */
+}
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;

@@ -41,11 +41,11 @@ $form-group-margin-bottom:       30px !default;
 	transform: translateX($translatex);
 }
 @mixin transition($transition) {
-    -moz-transition:    all $transition ease;
-    -o-transition:      all $transition ease;
-    -webkit-transition: all $transition ease;
-    -ms-transition: 		all $transition ease;
-    transition:         all $transition ease;
+	-moz-transition:    all $transition ease;
+	-o-transition:      all $transition ease;
+	-webkit-transition: all $transition ease;
+	-ms-transition: 		all $transition ease;
+transition:         all $transition ease;
 }
 @mixin inline-block() {
 	display:-moz-inline-stack;
@@ -55,17 +55,17 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
 }
 @mixin flex() {
 	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -moz-box;         
+	display: -ms-flexbox;      
+	display: -webkit-flex;     
+	display: flex;             
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
@@ -161,24 +161,24 @@ figure {
 	}
 }
 ::-webkit-selection {
-  color: $brand-white;
-  background: $brand-primary;
+	color: $brand-white;
+	background: $brand-primary;
 }
 
 ::-moz-selection {
-  color: $brand-white;
-  background: $brand-primary;
+	color: $brand-white;
+	background: $brand-primary;
 }
 
 ::selection {
-  color: $brand-white;
-  background: $brand-primary;
+	color: $brand-white;
+	background: $brand-primary;
 }
 
 #colorlib-page {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
 }
 #colorlib-aside {
 	padding-top: 3em;
@@ -661,44 +661,44 @@ body {
 
 //TIMELINE
 .timeline-centered {
-    position: relative;
-    margin-bottom: 30px;
+	position: relative;
+	margin-bottom: 30px;
 }
 .timeline-centered:before, .timeline-centered:after {
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
 
 .timeline-centered:after {
-  clear: both;
+	clear: both;
 }
 
 .timeline-centered:before, .timeline-centered:after {
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
 
 .timeline-centered:after {
-  clear: both;
+	clear: both;
 }
 
 .timeline-centered:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 4px;
-  background: $brand-gray;
-  top: 20px;
-  bottom: 20px;
-  margin-left: 29px;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 4px;
+	background: $brand-gray;
+	top: 20px;
+	bottom: 20px;
+	margin-left: 29px;
 }
 
 .timeline-centered .timeline-entry {
-  position: relative;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  clear: both;
+	position: relative;
+	margin-top: 5px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	clear: both;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner {
@@ -1596,12 +1596,12 @@ margin-left: -20px;
 	font-weight: 400;
 	@include transition(.3s);
 	@include border-radius(0);
-  	&:active, &:focus {
-  		outline: none;
+	&:active, &:focus {
+		outline: none;
 		box-shadow: none;
 		border-color:transparent;
 		background: lighten($brand-black,94%);
-  }
+	}
 }
 #message {
 	height: 130px;
@@ -1609,93 +1609,93 @@ margin-left: -20px;
 
 // Burger Menu
 .colorlib-nav-toggle {
-  cursor: pointer;
-  text-decoration: none;
-  &.active i {
+	cursor: pointer;
+	text-decoration: none;
+	&.active i {
 		&::before, &::after {
 			background: $brand-black;
 		}
-  }
-  &.dark {
-  	&.active i {
+	}
+	&.dark {
+		&.active i {
 			&::before, &::after {
 				background: $brand-black;
 			}
-	  }
-  }
-  &:hover, &:focus, &:active {
-  	outline: none;
-  	border-bottom: none!important;
-  }
-  i {
-  	position: relative;
-	  @include inline-block;
-	  width: 30px;
-	  height: 2px;
-	  color: $brand-black;
-	  font:bold 14px/.4 Helvetica;
-	  text-transform: uppercase;
-	  text-indent:-55px;
-	  background: $brand-black;
-	  transition: all .2s ease-out;
-		 &::before, &::after {
-	  	  content:'';
-		  width: 30px;
-		  height: 2px;
-		  background: $brand-black;
-		  position: absolute;
-		  left:0;
-		  @include transition(.2s);
-	  }
-  }
-  &.dark {
-  	i {
-	  	position: relative;
-		  color: $brand-black;
-		  background: $brand-black;
-		  transition: all .2s ease-out;
-			 &::before, &::after {
-			  background: $brand-black;
-			  @include transition(.2s);
-		  }
-	  }
-  }
+		}
+	}
+	&:hover, &:focus, &:active {
+		outline: none;
+		border-bottom: none!important;
+	}
+	i {
+		position: relative;
+		@include inline-block;
+		width: 30px;
+		height: 2px;
+		color: $brand-black;
+		font:bold 14px/.4 Helvetica;
+		text-transform: uppercase;
+		text-indent:-55px;
+		background: $brand-black;
+		transition: all .2s ease-out;
+		&::before, &::after {
+			content:'';
+			width: 30px;
+			height: 2px;
+			background: $brand-black;
+			position: absolute;
+			left:0;
+			@include transition(.2s);
+		}
+	}
+	&.dark {
+		i {
+			position: relative;
+			color: $brand-black;
+			background: $brand-black;
+			transition: all .2s ease-out;
+			&::before, &::after {
+				background: $brand-black;
+				@include transition(.2s);
+			}
+		}
+	}
 }
 
 .colorlib-nav-toggle i::before {
-  top: -7px;
+	top: -7px;
 }
 .colorlib-nav-toggle i::after {
-  bottom: -7px;
+	bottom: -7px;
 }
 .colorlib-nav-toggle:hover i::before {
-  top: -10px;
+	top: -10px;
 }
 .colorlib-nav-toggle:hover i::after {
-  bottom: -10px;
+	bottom: -10px;
 }
 .colorlib-nav-toggle.active i {
 	background: transparent;
 }
 .colorlib-nav-toggle.active i::before {
-  top:0;
-  -webkit-transform: rotateZ(45deg);
-     -moz-transform: rotateZ(45deg);
-      -ms-transform: rotateZ(45deg);
-       -o-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+	top:0;
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+transform: rotateZ(45deg);
 }
 .colorlib-nav-toggle.active i::after {
-  bottom:0;
-  -webkit-transform: rotateZ(-45deg);
-     -moz-transform: rotateZ(-45deg);
-      -ms-transform: rotateZ(-45deg);
-       -o-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+	bottom:0;
+	-webkit-transform: rotateZ(-45deg);
+	-moz-transform: rotateZ(-45deg);
+	-ms-transform: rotateZ(-45deg);
+	-o-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
 }
 .colorlib-nav-toggle {
-  	position: fixed;
-  	left: -5px;
+	position: fixed;
+	left: -5px;
 	top: 0px;
 	z-index: 9999;
 	cursor: pointer;
@@ -1703,11 +1703,10 @@ margin-left: -20px;
 	visibility: hidden;
 	padding: 20px;
 	@include transition(.5s);
-  	@media screen and (max-width: $screen-sm) {
-  		opacity: 1;
+	@media screen and (max-width: $screen-sm) {
+		opacity: 1;
 		visibility: visible;
-  	}
-  
+	}
 }
 
 
