@@ -240,7 +240,7 @@ figure {
   background: #fff url(../images/loader.gif) repeat center center;
   width: 100%;
   float: left;
-  /* margin-bottom: 10em; */
+  margin-bottom: -50px;
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;

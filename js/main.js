@@ -63,7 +63,7 @@ function sendMail() {
    // Animations
    let contentWayPoint = function() {
       $('.animate-box').waypoint( function( direction ) {
-         if (direction === 'down' /* && !$(this.element).hasClass('animated') */) {
+         if (direction === 'down' && !$(this.element).hasClass('animated')) {
             $(this.element).addClass('item-animate');
             setTimeout(function() {
                $('body .animate-box.item-animate').each(function(k) {
