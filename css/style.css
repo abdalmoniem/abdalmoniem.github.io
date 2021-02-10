@@ -40,8 +40,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Cascadia Code", "Century Gothic", "Playfair Display", Georgia, serif;
-  font-weight: 400;
+  font-family: "Poppins", "Poiret One", "Playfair Display", Georgia, serif;
+  /* font-weight: 400; */
+  font-weight: bold;
   margin: 0 0 30px 0; }
 
 figure {
@@ -298,7 +299,7 @@ figure {
           margin: 0;
           padding: 0;
           color: black;
-          font-family: "Cascadia Code", "Century Gothic", "Playfair Display", Georgia, serif; }
+          font-family: "Poppins", "Poiret One", "Playfair Display", Georgia, serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 60px;
