@@ -1,4 +1,13 @@
-;(function () {
+function sendMail() {
+	const formData = new FormData(document.querySelector('#send_mail_form'));
+
+	const name = formData.get("name");
+	const message = formData.get("message");
+
+	window.open(`mailto:abdalmoniemalhifnawy@gmail.com?subject=${name} sent you a new message&body=${message}`);
+}
+
+(function ($) {
    'use strict';
 
    let isMobile = {
@@ -53,14 +62,15 @@
 
    // Animations
    let contentWayPoint = function() {
-      let i = 0;
       $('.animate-box').waypoint( function( direction ) {
-         if (direction === 'down' && !$(this.element).hasClass('animated')) {
-            i++;
+         if (direction === 'down' /* && !$(this.element).hasClass('animated') */) {
             $(this.element).addClass('item-animate');
             setTimeout(function() {
                $('body .animate-box.item-animate').each(function(k) {
                   let el = $(this);
+                  if (el.hasClass('animated')) {
+                     el.removeClass('animated')
+                  }
                   setTimeout( function () {
                      let effect = el.data('animate-effect');
                      if ( effect === 'fadeIn') {
@@ -192,7 +202,7 @@
    let stickyFunction = function() {
       let h = $('.image-content').outerHeight();
 
-      if ($(window).width() <= 992 ) {
+      if ($(window).width() <= 995 ) {
          $("#sticky_item").trigger("sticky_kit:detach");
       } else {
          $('.sticky-parent').removeClass('stick-detach');
@@ -204,7 +214,7 @@
          let h = $('.image-content').outerHeight();
          $('.sticky-parent').css('height', h);
 
-         if ($(window).width() <= 992 ) {
+         if ($(window).width() <= 995 ) {
             $("#sticky_item").trigger("sticky_kit:detach");
          } else {
             $('.sticky-parent').removeClass('stick-detach');
@@ -237,8 +247,8 @@
       })
    };
 
-   // Document on load.
-   $(function() {
+   // Window on load.
+   $(window).on('load', function() {
       fullHeight();
 
       counter();
@@ -251,18 +261,16 @@
 
       clickMenu();
 
-      // navActive();
+      navActive();
 
       navigationSection();
-
-      // windowScroll();
 
       mobileMenuOutsideClick();
 
       sliderMain();
 
-      stickyFunction();
+      // stickyFunction();
 
       owlCrouselFeatureSlide();
    });
-}());
+}(jQuery));

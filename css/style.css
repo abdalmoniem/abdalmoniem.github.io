@@ -40,7 +40,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Cascadia Code", "Century Gothic", "Playfair Display", Georgia, serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
 
@@ -235,11 +235,11 @@ figure {
       padding: 0 1em; } }
 
 #colorlib-hero {
-  min-height: 500px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  min-height: 800px;
+  background: #fff url(../images/loader.gif) repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  /* margin-bottom: 10em; */
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;
@@ -298,7 +298,7 @@ figure {
           margin: 0;
           padding: 0;
           color: black;
-          font-family: "Playfair Display", Georgia, serif; }
+          font-family: "Cascadia Code", "Century Gothic", "Playfair Display", Georgia, serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 60px;

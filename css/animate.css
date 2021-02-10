@@ -1349,6 +1349,31 @@ Copyright (c) 2015 Daniel Eden
   animation-name: fadeInRight;
 }
 
+@-webkit-keyframes fillIn {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fillIn {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.fillIn {
+  -webkit-animation-name: fillIn;
+  animation-name: fillIn;
+}
+
 @-webkit-keyframes fadeInRightBig {
   from {
     opacity: 0;

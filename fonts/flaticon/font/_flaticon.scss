@@ -1,0 +1,239 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:05
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-add-control-interface-symbol:before { content: "\f100"; }
+.flaticon-add-game-console-symbol:before { content: "\f101"; }
+.flaticon-cancel-game-control-interface-symbol:before { content: "\f102"; }
+.flaticon-cooperative-game:before { content: "\f103"; }
+.flaticon-delete-console-of-games-interface-symbol:before { content: "\f104"; }
+.flaticon-disc-black-circular-shape:before { content: "\f105"; }
+.flaticon-download-game-interface-symbol-of-control-with-an-arrow:before { content: "\f106"; }
+.flaticon-dreamcast-control-for-games:before { content: "\f107"; }
+.flaticon-four-player-game-control:before { content: "\f108"; }
+.flaticon-four-ps-games-controls:before { content: "\f109"; }
+.flaticon-game:before { content: "\f10a"; }
+.flaticon-game-control-for-one-person-interface-symbol:before { content: "\f10b"; }
+.flaticon-game-control-super-nintendo:before { content: "\f10c"; }
+.flaticon-game-control-tool:before { content: "\f10d"; }
+.flaticon-game-control-tool-with-full-battery-symbol:before { content: "\f10e"; }
+.flaticon-game-control-with-full-battery:before { content: "\f10f"; }
+.flaticon-game-control-with-half-battery-charged:before { content: "\f110"; }
+.flaticon-game-control-with-no-battery:before { content: "\f111"; }
+.flaticon-game-control-without-batteries:before { content: "\f112"; }
+.flaticon-game-disk:before { content: "\f113"; }
+.flaticon-game-mini-disc:before { content: "\f114"; }
+.flaticon-gameboy:before { content: "\f115"; }
+.flaticon-gameboy-advanced-game:before { content: "\f116"; }
+.flaticon-gameboy-tool:before { content: "\f117"; }
+.flaticon-gamecube-console-box:before { content: "\f118"; }
+.flaticon-games-console:before { content: "\f119"; }
+.flaticon-games-control-tool:before { content: "\f11a"; }
+.flaticon-games-control-with-low-battery:before { content: "\f11b"; }
+.flaticon-games-control-with-no-batteries-symbol:before { content: "\f11c"; }
+.flaticon-games-controller-with-full-battery:before { content: "\f11d"; }
+.flaticon-gane-control-with-medium-battery-status:before { content: "\f11e"; }
+.flaticon-genesis-control:before { content: "\f11f"; }
+.flaticon-headset:before { content: "\f120"; }
+.flaticon-joystick-game-control:before { content: "\f121"; }
+.flaticon-medium-battery-status-symbol-of-games-control:before { content: "\f122"; }
+.flaticon-monitor-keyboard-and-mouse:before { content: "\f123"; }
+.flaticon-n64-game-control:before { content: "\f124"; }
+.flaticon-nintendo-64-console:before { content: "\f125"; }
+.flaticon-nintendo-game:before { content: "\f126"; }
+.flaticon-nintendo-game-1:before { content: "\f127"; }
+.flaticon-nintendo-game-control:before { content: "\f128"; }
+.flaticon-nintendo-game-tool:before { content: "\f129"; }
+.flaticon-nintendo-gamecube-control:before { content: "\f12a"; }
+.flaticon-nintendo-games-console:before { content: "\f12b"; }
+.flaticon-nintendo-wii-control-for-games:before { content: "\f12c"; }
+.flaticon-one-player-game-symbol:before { content: "\f12d"; }
+.flaticon-one-player-game-symbol-1:before { content: "\f12e"; }
+.flaticon-online-games-interface-symbol:before { content: "\f12f"; }
+.flaticon-online-games-symbol-of-a-monitor-and-a-game-control:before { content: "\f130"; }
+.flaticon-plus-control:before { content: "\f131"; }
+.flaticon-ps-3-games-control-with-low-battery-status:before { content: "\f132"; }
+.flaticon-ps-logo-of-games:before { content: "\f133"; }
+.flaticon-ps3-wireless-game-control:before { content: "\f134"; }
+.flaticon-ps4-control-of-games:before { content: "\f135"; }
+.flaticon-ps4-game-console:before { content: "\f136"; }
+.flaticon-ps4-game-control-with-medium-battery:before { content: "\f137"; }
+.flaticon-ps4-game-control-with-no-battery:before { content: "\f138"; }
+.flaticon-ps4-low-battery-status-symbol-of-game-control-interface:before { content: "\f139"; }
+.flaticon-ps4-wireless-game-control:before { content: "\f13a"; }
+.flaticon-racing-controller:before { content: "\f13b"; }
+.flaticon-rest-game-control-interface-symbol:before { content: "\f13c"; }
+.flaticon-shooting-game-target:before { content: "\f13d"; }
+.flaticon-sony-ps-games-buttons:before { content: "\f13e"; }
+.flaticon-super-nintendo-game-symbol:before { content: "\f13f"; }
+.flaticon-three-players-game-symbol:before { content: "\f140"; }
+.flaticon-three-ps-controls-for-games:before { content: "\f141"; }
+.flaticon-two-players-game-interface-symbol:before { content: "\f142"; }
+.flaticon-versus-game:before { content: "\f143"; }
+.flaticon-vibration-game-control-black-tool-shape:before { content: "\f144"; }
+.flaticon-wifi-wireless-control:before { content: "\f145"; }
+.flaticon-wii-control-for-games:before { content: "\f146"; }
+.flaticon-wii-full-battery-status-symbol:before { content: "\f147"; }
+.flaticon-wii-game-control-with-low-battery:before { content: "\f148"; }
+.flaticon-wii-game-control-with-low-battery-status:before { content: "\f149"; }
+.flaticon-wii-game-control-with-medium-battery-status:before { content: "\f14a"; }
+.flaticon-wii-game-control-with-no-battery:before { content: "\f14b"; }
+.flaticon-wii-games-control:before { content: "\f14c"; }
+.flaticon-wii-games-control-tool:before { content: "\f14d"; }
+.flaticon-wii-logo:before { content: "\f14e"; }
+.flaticon-wii-u-control-for-games:before { content: "\f14f"; }
+.flaticon-wii-u-full-battery-games-control-symbol:before { content: "\f150"; }
+.flaticon-wii-u-games-tool:before { content: "\f151"; }
+.flaticon-wii-u-logo:before { content: "\f152"; }
+.flaticon-wii-u-wireless-game-control-tool:before { content: "\f153"; }
+.flaticon-xbox-360-console-of-games:before { content: "\f154"; }
+.flaticon-xbox-360-control-game-tool:before { content: "\f155"; }
+.flaticon-xbox-360-wireless-game-control-tool:before { content: "\f156"; }
+.flaticon-xbox-buttons:before { content: "\f157"; }
+.flaticon-xbox-buttons-set:before { content: "\f158"; }
+.flaticon-xbox-console:before { content: "\f159"; }
+.flaticon-xbox-console-tool:before { content: "\f15a"; }
+.flaticon-xbox-control-for-one:before { content: "\f15b"; }
+.flaticon-xbox-digital-control:before { content: "\f15c"; }
+.flaticon-xbox-games-control-with-medium-battery-status:before { content: "\f15d"; }
+.flaticon-xbox-logo:before { content: "\f15e"; }
+.flaticon-xbox-one-full-battery-games-control:before { content: "\f15f"; }
+.flaticon-xbox-one-game-control-with-low-battery-status:before { content: "\f160"; }
+.flaticon-xbox-one-games-console:before { content: "\f161"; }
+.flaticon-xbox-one-wireless-control:before { content: "\f162"; }
+.flaticon-xbox-one-with-no-battery:before { content: "\f163"; }
+    
+    $font-Flaticon-add-control-interface-symbol: "\f100";
+    $font-Flaticon-add-game-console-symbol: "\f101";
+    $font-Flaticon-cancel-game-control-interface-symbol: "\f102";
+    $font-Flaticon-cooperative-game: "\f103";
+    $font-Flaticon-delete-console-of-games-interface-symbol: "\f104";
+    $font-Flaticon-disc-black-circular-shape: "\f105";
+    $font-Flaticon-download-game-interface-symbol-of-control-with-an-arrow: "\f106";
+    $font-Flaticon-dreamcast-control-for-games: "\f107";
+    $font-Flaticon-four-player-game-control: "\f108";
+    $font-Flaticon-four-ps-games-controls: "\f109";
+    $font-Flaticon-game: "\f10a";
+    $font-Flaticon-game-control-for-one-person-interface-symbol: "\f10b";
+    $font-Flaticon-game-control-super-nintendo: "\f10c";
+    $font-Flaticon-game-control-tool: "\f10d";
+    $font-Flaticon-game-control-tool-with-full-battery-symbol: "\f10e";
+    $font-Flaticon-game-control-with-full-battery: "\f10f";
+    $font-Flaticon-game-control-with-half-battery-charged: "\f110";
+    $font-Flaticon-game-control-with-no-battery: "\f111";
+    $font-Flaticon-game-control-without-batteries: "\f112";
+    $font-Flaticon-game-disk: "\f113";
+    $font-Flaticon-game-mini-disc: "\f114";
+    $font-Flaticon-gameboy: "\f115";
+    $font-Flaticon-gameboy-advanced-game: "\f116";
+    $font-Flaticon-gameboy-tool: "\f117";
+    $font-Flaticon-gamecube-console-box: "\f118";
+    $font-Flaticon-games-console: "\f119";
+    $font-Flaticon-games-control-tool: "\f11a";
+    $font-Flaticon-games-control-with-low-battery: "\f11b";
+    $font-Flaticon-games-control-with-no-batteries-symbol: "\f11c";
+    $font-Flaticon-games-controller-with-full-battery: "\f11d";
+    $font-Flaticon-gane-control-with-medium-battery-status: "\f11e";
+    $font-Flaticon-genesis-control: "\f11f";
+    $font-Flaticon-headset: "\f120";
+    $font-Flaticon-joystick-game-control: "\f121";
+    $font-Flaticon-medium-battery-status-symbol-of-games-control: "\f122";
+    $font-Flaticon-monitor-keyboard-and-mouse: "\f123";
+    $font-Flaticon-n64-game-control: "\f124";
+    $font-Flaticon-nintendo-64-console: "\f125";
+    $font-Flaticon-nintendo-game: "\f126";
+    $font-Flaticon-nintendo-game-1: "\f127";
+    $font-Flaticon-nintendo-game-control: "\f128";
+    $font-Flaticon-nintendo-game-tool: "\f129";
+    $font-Flaticon-nintendo-gamecube-control: "\f12a";
+    $font-Flaticon-nintendo-games-console: "\f12b";
+    $font-Flaticon-nintendo-wii-control-for-games: "\f12c";
+    $font-Flaticon-one-player-game-symbol: "\f12d";
+    $font-Flaticon-one-player-game-symbol-1: "\f12e";
+    $font-Flaticon-online-games-interface-symbol: "\f12f";
+    $font-Flaticon-online-games-symbol-of-a-monitor-and-a-game-control: "\f130";
+    $font-Flaticon-plus-control: "\f131";
+    $font-Flaticon-ps-3-games-control-with-low-battery-status: "\f132";
+    $font-Flaticon-ps-logo-of-games: "\f133";
+    $font-Flaticon-ps3-wireless-game-control: "\f134";
+    $font-Flaticon-ps4-control-of-games: "\f135";
+    $font-Flaticon-ps4-game-console: "\f136";
+    $font-Flaticon-ps4-game-control-with-medium-battery: "\f137";
+    $font-Flaticon-ps4-game-control-with-no-battery: "\f138";
+    $font-Flaticon-ps4-low-battery-status-symbol-of-game-control-interface: "\f139";
+    $font-Flaticon-ps4-wireless-game-control: "\f13a";
+    $font-Flaticon-racing-controller: "\f13b";
+    $font-Flaticon-rest-game-control-interface-symbol: "\f13c";
+    $font-Flaticon-shooting-game-target: "\f13d";
+    $font-Flaticon-sony-ps-games-buttons: "\f13e";
+    $font-Flaticon-super-nintendo-game-symbol: "\f13f";
+    $font-Flaticon-three-players-game-symbol: "\f140";
+    $font-Flaticon-three-ps-controls-for-games: "\f141";
+    $font-Flaticon-two-players-game-interface-symbol: "\f142";
+    $font-Flaticon-versus-game: "\f143";
+    $font-Flaticon-vibration-game-control-black-tool-shape: "\f144";
+    $font-Flaticon-wifi-wireless-control: "\f145";
+    $font-Flaticon-wii-control-for-games: "\f146";
+    $font-Flaticon-wii-full-battery-status-symbol: "\f147";
+    $font-Flaticon-wii-game-control-with-low-battery: "\f148";
+    $font-Flaticon-wii-game-control-with-low-battery-status: "\f149";
+    $font-Flaticon-wii-game-control-with-medium-battery-status: "\f14a";
+    $font-Flaticon-wii-game-control-with-no-battery: "\f14b";
+    $font-Flaticon-wii-games-control: "\f14c";
+    $font-Flaticon-wii-games-control-tool: "\f14d";
+    $font-Flaticon-wii-logo: "\f14e";
+    $font-Flaticon-wii-u-control-for-games: "\f14f";
+    $font-Flaticon-wii-u-full-battery-games-control-symbol: "\f150";
+    $font-Flaticon-wii-u-games-tool: "\f151";
+    $font-Flaticon-wii-u-logo: "\f152";
+    $font-Flaticon-wii-u-wireless-game-control-tool: "\f153";
+    $font-Flaticon-xbox-360-console-of-games: "\f154";
+    $font-Flaticon-xbox-360-control-game-tool: "\f155";
+    $font-Flaticon-xbox-360-wireless-game-control-tool: "\f156";
+    $font-Flaticon-xbox-buttons: "\f157";
+    $font-Flaticon-xbox-buttons-set: "\f158";
+    $font-Flaticon-xbox-console: "\f159";
+    $font-Flaticon-xbox-console-tool: "\f15a";
+    $font-Flaticon-xbox-control-for-one: "\f15b";
+    $font-Flaticon-xbox-digital-control: "\f15c";
+    $font-Flaticon-xbox-games-control-with-medium-battery-status: "\f15d";
+    $font-Flaticon-xbox-logo: "\f15e";
+    $font-Flaticon-xbox-one-full-battery-games-control: "\f15f";
+    $font-Flaticon-xbox-one-game-control-with-low-battery-status: "\f160";
+    $font-Flaticon-xbox-one-games-console: "\f161";
+    $font-Flaticon-xbox-one-wireless-control: "\f162";
+    $font-Flaticon-xbox-one-with-no-battery: "\f163";
