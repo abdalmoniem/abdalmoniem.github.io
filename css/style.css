@@ -31,13 +31,13 @@
 }
 .container {
   position: relative;
-  width: 24px;
-  height: 24px;
-  margin-top: -200;
+  width: 25px;
+  height: 25px;
+  /* margin-top: -200; */
 }
 .chevron {
   position: absolute;
-  width: 28px;
+  width: 30px;
   height: 8px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
@@ -56,9 +56,9 @@
 .chevron:after {
   content: ' ';
   position: absolute;
-  top: 0;
+  top: 2;
   height: 100%;
-  width: 51%;
+  width: 50%;
   background: #000;
 }
 
