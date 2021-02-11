@@ -15,6 +15,81 @@
   pointer-events:none; /* This makes it not clickable */
   opacity:0.3;         /* This grays it out to look disabled */
 }
+.container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-top: -200;
+}
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #000;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Poppins", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 1;
+  animation: pulse 1s linear reverse infinite;
+}
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -240,7 +315,7 @@ figure {
   background: #fff url(../images/loader.gif) repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: -50px;
+  margin-bottom: 10em;
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;

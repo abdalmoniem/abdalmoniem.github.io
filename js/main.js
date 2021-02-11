@@ -273,4 +273,8 @@ function sendMail() {
 
       owlCrouselFeatureSlide();
    });
+
+   $(window).on('scroll', function(direction) {
+      console.log(direction);
+   });
 }(jQuery));
