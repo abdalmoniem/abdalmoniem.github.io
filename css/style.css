@@ -325,15 +325,15 @@ figure {
       padding: 0 1em; } }
 
 #colorlib-hero {
-  min-height: 800px;
+  min-height: 400px;
   background: #fff url(../images/loader.gif) repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  /* margin-bottom: 10em; */
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;
-    z-index: 1;
+    z-index: 0;
     margin-bottom: 0; }
     #colorlib-hero .flexslider .slides {
       position: relative;
