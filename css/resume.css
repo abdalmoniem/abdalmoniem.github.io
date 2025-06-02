@@ -1,0 +1,145 @@
+@page {
+  size: letter;
+  margin: 0in;
+}
+
+html {
+  font-size: 11pt;
+}
+
+a[href]::after {
+  content: "";
+}
+
+section {
+  page-break-inside: avoid;
+}
+
+header {
+  padding: 0.5in;
+}
+
+header {
+  padding-bottom: 0.5rem;
+}
+
+.header-info {
+  margin-top: 0;
+}
+
+main,
+aside,
+footer {
+  padding: 2rem;
+}
+
+main {
+  padding-left: 0.5in;
+  padding-bottom: 0.5in;
+}
+
+aside {
+  padding-right: 0.5in;
+  padding-bottom: 0.5in;
+}
+
+.page-header,
+.page-footer {
+  background: #fff;
+}
+
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+aside {
+  border-top: none;
+  border-left: 1px solid #ccc;
+}
+
+aside h1 {
+  font-size: 1.4rem;
+}
+
+aside h2 {
+  font-size: 1.1rem;
+}
+
+aside h3 {
+  font-size: 1rem;
+}
+
+aside h4 {
+  font-size: 1rem;
+}
+
+aside h5 {
+  font-size: 1rem;
+}
+
+aside h6 {
+  font-size: 1rem;
+}
+
+.page-content .container {
+  grid-template-columns: 2fr 1fr;
+}
+
+.header-top {
+  gap: 2rem;
+}
+
+.page-header ul {
+  margin: 0.5rem 0;
+}
+
+.inline-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.inline-list li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.inline-list li:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.5rem;
+  color: #ccc;
+}
+
+.inline-list-flexible {
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--spacing-inline);
+}
+
+.inline-list-flexible li:not(:last-child)::after {
+  content: "|";
+  margin-left: var(--spacing-inline);
+  color: #ccc;
+}
+
+.four-column-list {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.four-column-list li {
+  display: inline-block;
+  width: 20%;
+  margin: 0.3%;
+  vertical-align: middle;
+  list-style-type: none;
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
