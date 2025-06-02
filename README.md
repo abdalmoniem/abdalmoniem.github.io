@@ -61,6 +61,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-If you have any questions or would like to get in touch, please contact me at [your-email@example.com].
+If you have any questions or would like to get in touch, please contact me at [abdalmoniemalhifnawy@gmail.com].
 
 Thank you for visiting my portfolio!
