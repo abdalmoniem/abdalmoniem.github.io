@@ -205,7 +205,7 @@ section {
 .section-heading::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 5px double #ccc;
   margin: 0 1rem;
 }
 
