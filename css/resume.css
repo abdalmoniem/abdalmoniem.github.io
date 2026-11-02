@@ -1,6 +1,14 @@
 @page {
-  size: letter;
-  margin: 0in;
+  size: A4;
+  margin: 0.23in;
+}
+
+/* WeasyPrint renders with media_type="screen", so @media print in main.css is ignored. */
+body {
+  display: block !important;
+  grid-template-rows: unset !important;
+  grid-template-columns: unset !important;
+  min-height: auto;
 }
 
 html {
@@ -11,16 +19,38 @@ a[href]::after {
   content: "";
 }
 
-section {
+/* Each job, project, degree, etc. (nested section) stays on one page when it fits. */
+section section {
+  break-inside: avoid;
   page-break-inside: avoid;
 }
 
-header {
-  padding: 0.5in;
+.four-column-list li {
+  break-inside: avoid;
 }
 
-header {
-  padding-bottom: 0.5rem;
+header.page-header {
+  padding: 0.15in 0.5in 0.35rem;
+  text-align: center;
+}
+
+/*
+ * A2 (and other wide @page sizes): main.css caps .container at 1200px; WeasyPrint
+ * then mis-centers flex children inside the header. Use full page width and center
+ * the column explicitly for PDF.
+ */
+header.page-header .container {
+  max-width: none;
+  width: 100%;
+  margin-inline: auto;
+  align-items: center;
+}
+
+header.page-header .header-top,
+header.page-header .header-info {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .header-info {
@@ -34,8 +64,7 @@ footer {
 }
 
 main {
-  padding-left: 0.5in;
-  padding-bottom: 0.5in;
+  padding: 0.25rem 0.5in 0.5in;
 }
 
 aside {
@@ -94,6 +123,14 @@ aside h6 {
 
 .page-header ul {
   margin: 0.5rem 0;
+}
+
+header.page-header .header-label-row .inline-list {
+  white-space: nowrap;
+}
+
+header.page-header .header-label-row .inline-list li {
+  display: inline-block;
 }
 
 .inline-list {

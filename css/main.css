@@ -17,10 +17,10 @@ body {
   font-weight: 400;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  min-height: auto;
 }
 
-body > *:last-child {
+body>*:last-child {
   page-break-after: avoid;
   margin-bottom: 0;
 }
@@ -163,7 +163,6 @@ section {
 .header-image {
   width: 100%;
   max-width: 256px;
-  aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid #999;
@@ -184,6 +183,36 @@ section {
   color: #444;
   margin-top: 0.2rem;
   margin-bottom: 0.8rem;
+}
+
+.header-label-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  width: 100%;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.header-label-row .header-label {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Keep pipe-separated links on one line; only the label sits beside this block. */
+.header-label-row .inline-list,
+.header-label-row .inline-list-flexible {
+  margin: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.header-label-row .inline-list li,
+.header-label-row .inline-list-flexible li {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .header-summary {
@@ -308,7 +337,8 @@ aside li {
 }
 
 .inline-list li {
-  display: flex; /* This is for HTML Whitespace Issues */
+  display: flex;
+  /* This is for HTML Whitespace Issues */
 }
 
 .inline-list-flexible {
@@ -317,7 +347,8 @@ aside li {
 }
 
 .inline-list-flexible li {
-  display: flex; /* This is for HTML Whitespace Issues */
+  display: flex;
+  /* This is for HTML Whitespace Issues */
 }
 
 /* Skillbars */
@@ -397,6 +428,25 @@ aside li {
   border-right: none;
 }
 
+/*
+ * Manual pagination (PDF via WeasyPrint uses screen CSS — these apply outside @media print).
+ * Add class to a section (or other block) in resume_pdf_template.html when you want a split.
+ */
+.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+
+.page-break-after {
+  break-after: page;
+  page-break-after: always;
+}
+
+.page-break-avoid {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
 /* Blockquotes */
 blockquote {
   margin: 1rem 2rem;
@@ -410,110 +460,30 @@ blockquote {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 37.5rem) {
-  .main-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .side-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 48rem) {
-  aside {
-    border-top: none;
-    border-left: 1px solid #ccc;
-  }
-
-  aside h1 {
-    font-size: 1.4rem;
-  }
-
-  aside h2 {
-    font-size: 1.1rem;
-  }
-
-  aside h3 {
-    font-size: 1rem;
-  }
-
-  aside h4 {
-    font-size: 1rem;
-  }
-
-  aside h5 {
-    font-size: 1rem;
-  }
-
-  aside h6 {
-    font-size: 1rem;
-  }
-
-  header {
-    padding-bottom: 1.5rem;
-  }
-
-  .flex-responsive {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .page-content .container {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .header-top {
-    gap: 2rem;
-  }
-
-  .header-image {
-    max-width: 192px;
-  }
-
-  .header-info {
-    margin-top: 0.5rem;
-  }
-
-  .page-header ul {
-    margin: 0.5rem 0;
-  }
-
-  .inline-list {
-    gap: var(--spacing-inline);
-  }
-
-  .inline-list li:not(:last-child)::after {
-    content: "|";
-    margin-left: var(--spacing-inline);
-    color: #ccc;
-  }
-
-  .inline-list-flexible {
-    gap: var(--spacing-inline);
-  }
-
-  .inline-list-flexible li:not(:last-child)::after {
-    content: "|";
-    margin-left: var(--spacing-inline);
-    color: #ccc;
-  }
-
-  .side-gallery {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media print {
+  .page-break-before {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .page-break-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
   .skill-bar-label {
     background: transparent !important;
     background-color: transparent !important;
-    mix-blend-mode: darken;
   }
 
   body {
+    min-height: auto;
+    display: block;
     -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 }
