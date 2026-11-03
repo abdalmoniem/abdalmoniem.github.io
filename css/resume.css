@@ -6,8 +6,8 @@
 /* WeasyPrint renders with media_type="screen", so @media print in main.css is ignored. */
 body {
   display: block !important;
-  grid-template-rows: unset !important;
-  grid-template-columns: unset !important;
+  grid-template-rows: none !important;
+  grid-template-columns: none !important;
   min-height: auto;
 }
 

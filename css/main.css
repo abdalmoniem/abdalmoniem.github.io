@@ -169,7 +169,29 @@ section {
 }
 
 .header-info ul {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+}
+
+/* Header contact/social rows — matches resume_pdf_template (inline items with | separators) */
+header.page-header .header-info .inline-list {
+  list-style: none;
+  padding: 0;
+}
+
+header.page-header .header-info address {
+  margin: 0.5rem 0;
+}
+
+header.page-header .header-info .inline-list li {
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+header.page-header .header-info .inline-list li:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.5rem;
+  color: #ccc;
 }
 
 .link-with-icon {
