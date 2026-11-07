@@ -5,1002 +5,898 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Site Info -->
   <title>AbdElMoniem ElHifnawy - Resume</title>
-  <meta name="description" content="  - ">
-  <meta name="author" content=" ">
+  <meta name="description"
+    content="AbdElMoniem ElHifnawy - I’m a Software Engineer with over 9 years of experience in Software Engineering, I specialize in a broad range of areas including Embedded Systems, Linux, Robotics, Android Development, Game Development, Database Administration, System Administration, CI/CD Automation, Diagnostic Systems, Wireless Connectivity Verification, Bluetooth Low Energy, and Zephyr. I thrive in challenging environments, actively collaborating with cross-functional teams to optimize workfows and improve system reliability.">
+  <meta name="author" content="AbdElMoniem ElHifnawy">
 
-  <!-- Open Graph Tags: The title of the page for social media sharing. It can match the title tag or be more descriptive. -->
-  <meta property="og:title" content=" ">
-
-  <!-- Open Graph Tags: Typically set to "website" for static sites or "article" for content-heavy pages. -->
+  <meta property="og:title" content="AbdElMoniem ElHifnawy - Resume">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="localhost:8000/resume.html">
+  <meta property="og:image" content="localhost:8000/img/mn3m.jpg">
+  <meta property="og:image:alt" content="AbdElMoniem ElHifnawy Profile Image">
+  <meta name="theme-color" content="#f8fafc">
 
-  <!-- Open Graph Tags: The URL of the page, used to ensure link previews resolve to the correct page. -->
-  <meta property="og:url" content="/resume.html">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
+      }
+      document.documentElement.classList.add("js");
+    })();
+  </script>
 
-  <!-- Open Graph Tags: URL of an image that represents the page. Useful for link previews. -->
-  <meta property="og:image" content="/">
-
-  <!-- Open Graph Tags: Provides an alternative text for the image to improve accessibility. -->
-  <meta property="og:image:alt" content="  Profile Image">
-
-  <!-- Custom Fonts -->
-  <link href="css/google_fonts_css2.css" rel="stylesheet">
-
-  <!-- Stylesheet -->
-
-  <link rel="stylesheet" href="css/modern_normalize.css" />
-  <link rel="stylesheet" href="css/html5bp.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/resume.css">
-
-  <!-- Set a theme color that matches your website's primary color -->
-  <meta name="theme-color" content="#fafafa">
-
-  <!-- Favicon for all browsers -->
   <link rel="icon" href="img/favicon.ico" sizes="any">
-
-  <!-- Web app manifest for Progressive Web Apps -->
-  <link rel="manifest" href="site.webmanifest">
-
-  <!-- Content Security Policy: Uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like XSS). Update if adding external sources (e.g., Google Fonts, Bootstrap CDN, analytics, etc). -->
-  <!-- <meta http-equiv="Content-Security-Policy" content=" default-src 'self'; script-src 'self' code.jquery.com; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' images.examplecdn.com; "> -->
+  <link href="css/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/modern_normalize.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/resume.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="container">
-      <div class="header-top flex-responsive">
-        <div class="header-info">
-          <h1>AbdElMoniem  Osama Fathallah Mohamed  ElHifnawy</h1>
-          
-          
-          
-          
-          <ul class="inline-list-flexible flex-responsive">
-            
-          </ul>
-          
-          <p class="header-summary">I’m a Software Engineer with over <b><i>9 years</i></b> of experience in Software Engineering, I specialize in a broad range of areas including Embedded Systems, Linux, Robotics, Android Development, Game Development, Database Administration, System Administration, CI/CD Automation, Diagnostic Systems, Wireless Connectivity Verification, Bluetooth Low Energy, and Zephyr. I thrive in challenging environments, actively collaborating with cross-functional teams to optimize workfows and improve system reliability.</p>
-        </div>
-      </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="resume-topbar">
+    <div class="resume-shell">
+      <a class="resume-brand" href="index.html">AbdElMoniem ElHifnawy</a>
+      <nav aria-label="Resume actions">
+        <a href="index.html">Portfolio</a>
+        <a href="resume.pdf" download>Download PDF</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">☾</span>
+      </button>
     </div>
   </header>
 
-  <div class="page-content">
-    <div class="container">
-      <main>
+  <main id="main" class="resume-shell resume">
+    <header class="resume-header">
+      <div class="resume-heading">
+        <h1>AbdElMoniem Osama Fathallah Mohamed ElHifnawy</h1>
+        <p class="resume-label">Software Engineer</p>
+      </div>
+
+      
+      <address class="contact-list resume-contact">
         
-        <section>
-          <h2 class="section-heading">Work Experience</h2>
+        
+        <div class="contact-group">
+          <a class="chip" href="tel:+4797286159">+47 972 861 59</a>
+          <a class="chip" href="mailto:abdalmoniemalhifnawy@gmail.com">abdalmoniemalhifnawy@gmail.com</a>
+          <span class="contact-location">📍 Trondheim, Norway</span>
+        </div>
+        
+        
+        
+        <div class="contact-group">
+          <a class="chip" href="tel:+48519861386">+48 519 861 386</a>
+          <a class="chip" href="mailto:abdalmoniemalhifnawy@gmail.com">abdalmoniemalhifnawy@gmail.com</a>
+          <span class="contact-location">📍 Mierzyn, Poland</span>
+        </div>
+        
+        
+        
+        <div class="contact-group">
+          <a class="chip" href="tel:+201554061017">+20 155 406 1017</a>
+          <a class="chip" href="mailto:hifnawy_moniem@hotmail.com">hifnawy_moniem@hotmail.com</a>
+          <span class="contact-location">📍 Cairo, Egypt</span>
+        </div>
+        
+        
+      </address>
+      
+
+      
+      <ul class="resume-social">
+        
+        <li>
+          <a href="https://linkedin.com/in/abdalmoniem-alhifnawy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <span class="resume-social-icon" aria-hidden="true"><svg aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  width="16"
+  height="16"
+  fill="currentColor"
+  class="bi bi-linkedin"
+  style="vertical-align: top;"
+  viewBox="0 0 16 16">
+  <path
+    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+</svg></span>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/abdalmoniem" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <span class="resume-social-icon" aria-hidden="true"><svg aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  width="16"
+  height="16"
+  fill="currentColor"
+  class="bi bi-github"
+  style="vertical-align: top;"
+  viewBox="0 0 16 16">
+  <path
+    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+</svg></span>
+            <span>GitHub</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+
+      <p class="resume-summary">I’m a Software Engineer with over <b><i>9 years</i></b> of experience in Software Engineering, I specialize in a broad range of areas including Embedded Systems, Linux, Robotics, Android Development, Game Development, Database Administration, System Administration, CI/CD Automation, Diagnostic Systems, Wireless Connectivity Verification, Bluetooth Low Energy, and Zephyr. I thrive in challenging environments, actively collaborating with cross-functional teams to optimize workfows and improve system reliability.</p>
+    </header>
+
+    <div class="resume-body">
+      <div class="resume-main">
+        
+        <section class="resume-section link-section" aria-labelledby="experience-title">
+          <h2 id="experience-title">Work Experience</h2>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              R&D Engineer at <a href="https://www.nordicsemi.com">Nordic Semiconductor</a>
-              
+              R&D Engineer
+              at <a href="https://www.nordicsemi.com">Nordic Semiconductor</a>
             </h3>
             
-            <p class="section-label"><b><i>Jul/2026</i></b> - <b><i>Present</i></b></p>
+            <p class="resume-meta"><b><i>Jul/2026</i></b> — <b><i>Present</i></b></p>
             
             <p>Nordic Semiconductor is a global leader in low power wireless connectivity solutions, providing the essential platform and wireless technologies that connect the world’s IoT devices. Nordic delivers world-class hardware, embedded software, development tools, power management, world-class support, and cloud lifecycle services - all simplifying development for developers to build reliable, scalable, and future-proof connected products faster.</p>
             
-            <h5>Responsibilities</h5>
-            <ul>
+            <h4>Highlights</h4>
+            <ul class="resume-list">
               <li>Design, implement, and debug automated <b><i>BLE</i></b> system tests in <b><i>CTF</i></b> (Common Test Framework), a pytest-based stack for multi-board lab verification.</li><li>Own and extend centralized test and lab configuration, defining target-device and test-rig pairings and platform matrices for regression and release qualification.</li><li>Develop and maintain Jenkins declarative pipelines for large BLE system-test jobs, including staged builds, filters, and multi-SDK manifest workflows.</li><li>Drive platform migration as legacy short-range parts leave mainline: retarget radio and related verification suites to <b><i>nRF54</i></b> Series and <b><i>nRF53</i></b> peers while keeping CI schedulable.</li><li>Port and debug <b><i>Zephyr</i></b> test applications for radio timing validation, board overlays, Kconfig, devicetree, and embedded C using RADIO, timers, and cross-domain event routing on newer SoCs.</li><li>Triage CI and hardware lab failures (build, flash, link, runtime assertions) and iterate fixes until pipelines and on-rig smoke tests pass.</li><li>Integrate <b><i>PPK2</i></b>-based (Power Profiler Kit) target power measurement into the <b><i>CTF</i></b> harness: flash measurement firmware before sampling, restore release firmware afterward, and wire configuration through board abstraction layers.</li><li>Implement <b><i>USB DFU</i></b> (Device Firmware Upgrade) programming flows for bench equipment firmware using standard Nordic command-line tooling and environment-driven artifact paths.</li><li>Refactor verification Python modules for <b><i>PPK2</i></b> board control, serial port selection, and clearer harness integration for power tests.</li><li>Contribute to <a href="https://github.com/nrfconnect/sdk-nrf"><b><i>sdk-nrf</i></b></a> within team-owned scope: remove deprecated board targets from Twister and sample metadata for <b><i>BLE</i></b> samples exercised in automated <b><i>BLE</i></b> sample verification.</li><li>Update changelog and release-note entries so sample and platform removals are documented for downstream developers.</li><li>Coordinate west manifest and revision-lock behavior so CI can pin SDK snapshots for new chip families without breaking default manifest jobs.</li><li>Split and scope CI stages by SDK manifest so host-power and similar suites run against the correct platform filters and toolchains.</li><li>Build <b><i>ppk_fw_version</i></b>, a <b><i>Rust CLI</i></b> that reads PPK2 firmware version over USB/serial, with structured CLI parsing, shell completions, and colored user output.</li><li>Collaborate with firmware, radio, and doc stakeholders on sample ownership boundaries and verification coverage when retiring older hardware from build and test matrices.</li>
             </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              Senior Software Engineer at <a href="https://globallogic.com">GlobalLogic Poland</a>
-              
+              Senior Software Engineer
+              at <a href="https://globallogic.com">GlobalLogic Poland</a>
             </h3>
             
-            <p class="section-label"><b><i>Mar/2023</i></b> - <b><i>Jun/2025</i></b></p>
+            <p class="resume-meta"><b><i>Mar/2023</i></b> — <b><i>Jun/2025</i></b></p>
             
             <p>GlobalLogic is a digital services company providing software product design and  development services. It is an independent subsidiary of Hitachi Ltd.</p>
             
-            <h5>Responsibilities</h5>
-            <ul>
+            <h4>Highlights</h4>
+            <ul class="resume-list">
               <li>Worked with Jenkins to automate CI/CD pipelines, manage build processes, and integrate with various tools for testing and deployment.</li><li>Configured Jenkins jobs, pipelines, and plugins to optimize software delivery workflows.</li><li>Worked with the AUTOSAR Diagnostic Stack, focusing on Diagnostic Data Identifer (DID) implementations and overall diagnostic stack activities.</li><li>Developed and confgured diagnostic services, ensuring compliance with UDS.</li><li>Integrated diagnostic protocols, managed DTCs, and optimized ECU communication strategies for robust vehicle diagnostics.</li><li>Worked with Robot Framework for test automation, focusing on keyword-driven testing and integration with various libraries</li><li>Designed, implemented and fixed automated test cases for validating software functionality, ensuring reliability and efficiency in testing processes.</li><li>Configured CI/CD pipelines to execute Robot Framework tests and generate detailed reports.</li><li>Wrote various scripts to help improve the development process.</li><li>Wrote a script to automate discovery, reservation and connection to remote Test Rigs.</li><li>Wrote a VSCode extension to populate the tasks.json file with Make targets from the project, open various tools used by the project and connect to Test Rigs.</li><li>Wrote a script to analyze map fles to verify correct Linker Sections allocation of various codes objects.</li><li>Created an automated script to configure and use MCDS on GreenHills Multi IDE that enables monitoring OS tasks in real-time, chart them, and create a snapshot of the currently running tasks and save them for latter analysis.</li><li>Conduct thorough and meticulous E2E FSM testing to ensure the comprehensive validation of system functionalities, adhering to industry best practices and quality standards.</li><li>Develop precise and comprehensive test specifcations within DOORs, demonstrating a deep understanding of system architecture and test design principles.</li><li>Execute test scenarios with a focus on precision and accuracy, navigating complex system pathways to identify and report any discrepancies while ensuring the robustness of the system.</li><li>Analyze Problem Reports with a methodical approach, identifying root causes and implementing effective solutions to rectify issues promptly, contributing to the continuous improvement of system reliability.</li><li>Maintain the highest standards of documentation by updating DOORs attributes in alignment with the Process Baseline, demonstrating meticulous attention to detail and adherence to organizational processes.</li>
             </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              Senior Embedded Software Engineer at <a href="https://vehiclevo.de">Vehiclevo Egypt</a>
-              
+              Senior Embedded Software Engineer
+              at <a href="https://vehiclevo.de">Vehiclevo Egypt</a>
             </h3>
             
-            <p class="section-label"><b><i>May/2022</i></b> - <b><i>Mar/2023</i></b></p>
+            <p class="resume-meta"><b><i>May/2022</i></b> — <b><i>Mar/2023</i></b></p>
             
             <p>Vehiclevo is a German automotive software company founded in 2016, specializing in intelligent software architectures for ECUs, with a focus on EVs, infotainment, and autonomous driving. It operates globally, including a development center in Egypt, and is a recognized AUTOSAR partner.</p>
             
-            <h5>Responsibilities</h5>
-            <ul>
+            <h4>Highlights</h4>
+            <ul class="resume-list">
               <li>Creating simulation nodes and panels using Vector CANoe and programming them with CAPL</li><li>Configuring Basic SW with Capital VStar (CVI)</li><li>Configuring AUTOSAR Basic SW and Creating AUTOSAR compatible SW components and Applications</li><li>Configuring GLIWA for multicore microcontrollers task monitoring</li>
             </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              Embedded Software Engineer at <a href="https://valeo.com">Valeo</a>
-              
+              Embedded Software Engineer
+              at <a href="https://valeo.com">Valeo</a>
             </h3>
             
-            <p class="section-label"><b><i>Oct/2018</i></b> - <b><i>Apr/2022</i></b></p>
+            <p class="resume-meta"><b><i>Oct/2018</i></b> — <b><i>Apr/2022</i></b></p>
             
             <p>Valeo is an automotive supplier and partner to automakers worldwide. It is a global leader in the design, production, and sale of components, integrated systems, and modules for the automotive industry.</p>
             
-            <h5>Responsibilities</h5>
-            <ul>
+            <h4>Highlights</h4>
+            <ul class="resume-list">
               <li>Creating simulation nodes and panels using Vector CANoe and programming them with CAPL</li><li>Configuring Basic SW with Vector DaVinci</li><li>Configuring Basic SW with Elektrobit Tresos</li><li>Configuring AUTOSAR Basic SW and Creating AUTOSAR compatible SW components and Applications</li><li>Using IBM DOORs to read customer requirements and creating SRS, CDD and Test Documents</li><li>Creating a variety of tools that help increase efficiency and performance of existing and new projects</li><li>Creating Steering Wheel Switches applications</li><li>Creating and Maintaining Capacitive Touch based solutions for different applications</li>
             </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              Embedded Software Intern at <a href="https://valeo.com">Valeo</a>
-              
+              Embedded Software Intern
+              at <a href="https://valeo.com">Valeo</a>
             </h3>
             
-            <p class="section-label"><b><i>Mar/2018</i></b> - <b><i>Jul/2022</i></b></p>
+            <p class="resume-meta"><b><i>Mar/2018</i></b> — <b><i>Jul/2022</i></b></p>
             
             
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              Senior Software Engineer at <a href="https://kan4u.com">KAN</a>
-              
+              Senior Software Engineer
+              at <a href="https://kan4u.com">KAN</a>
             </h3>
             
-            <p class="section-label"><b><i>Dec/2017</i></b> - <b><i>Feb/2018</i></b></p>
+            <p class="resume-meta"><b><i>Dec/2017</i></b> — <b><i>Feb/2018</i></b></p>
             
             
             
-            <h5>Responsibilities</h5>
-            <ul>
+            <h4>Highlights</h4>
+            <ul class="resume-list">
               <li>Developing Android Apps for various clients, managing SQL databases and creating backend servers using Java2EE and JSP</li>
             </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              Game Developer at <a href="https://hivestudio.net">Hive Studio</a>
-              
+              Game Developer
+              at <a href="https://hivestudio.net">Hive Studio</a>
             </h3>
             
-            <p class="section-label"><b><i>Dec/2017</i></b> - <b><i>Feb/2018</i></b></p>
+            <p class="resume-meta"><b><i>Dec/2017</i></b> — <b><i>Feb/2018</i></b></p>
             
             
             
-            <h5>Responsibilities</h5>
-            <ul>
+            <h4>Highlights</h4>
+            <ul class="resume-list">
               <li>Developing various VR and AR games for various advertising purposes, using Unity3D and C#</li>
             </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              Android Developer at <a href="https://www.hadeya.net/">AL Hadeya For Arabic Software</a>
-              
+              Android Developer
+              at <a href="https://www.hadeya.net/">AL Hadeya For Arabic Software</a>
             </h3>
             
-            <p class="section-label"><b><i>Dec/2017</i></b> - <b><i>Feb/2018</i></b></p>
+            <p class="resume-meta"><b><i>Dec/2017</i></b> — <b><i>Feb/2018</i></b></p>
             
             
             
-            <h5>Responsibilities</h5>
-            <ul>
+            <h4>Highlights</h4>
+            <ul class="resume-list">
               <li>Developing Android Apps for various clients, managing SQL databases and creating backend servers using Java2EE and JSP</li>
             </ul>
             
-          </section>
+          </article>
           
         </section>
         
 
         
-        <section>
-          <h2 class="section-heading">Projects</h2>
+        <section class="resume-section link-section" aria-labelledby="projects-title">
+          <h2 id="projects-title">Projects</h2>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               Hands On Detection
-              
             </h3>
             <p>Creating steering wheel hands on detection using segmented ADC segments and integrating with autonomous driving and applying gesture detection with which a user can play next/previous song or increase/decrease volume.</p>
             
             
-          </section>
+            <ul class="resume-tags" aria-label="Tools used in Hands On Detection">
+              <li>AVR</li><li>STM32</li><li>Vector CANoe</li><li>make</li><li>C</li><li>Embedded C</li><li>Bare Metal</li><li>ADC</li><li>Capacitive Sensing</li><li>Operating Systems</li><li>Algorithms</li>
+            </ul>
+            
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               Steering Wheel Light Bands
-              
             </h3>
             <p>Creating segmented steering wheel light bands and integrating with autonomous driving to indicate various states, show welcome light and display speed value through the light bands</p>
             
             
-          </section>
+            <ul class="resume-tags" aria-label="Tools used in Steering Wheel Light Bands">
+              <li>AVR</li><li>STM32</li><li>Vector CANoe</li><li>make</li><li>C</li><li>Embedded C</li><li>Bare Metal</li><li>ADC</li><li>Capacitive Sensing</li><li>Operating Systems</li><li>Algorithms</li>
+            </ul>
+            
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               Touch Display Based Steering Wheel Switches
-              
             </h3>
             <p>Creating touch display based steering wheel switches with haptic feedback to show various information for the user such as currently playing song, caller info, cruise control info and more. Users can also interact with these displays to set various settings such as answering calls, changing music or setting cruise control speed.</p>
             
             
-          </section>
+            <ul class="resume-tags" aria-label="Tools used in Touch Display Based Steering Wheel Switches">
+              <li>AVR</li><li>STM32</li><li>Vector CANoe</li><li>make</li><li>C</li><li>Embedded C</li><li>Bare Metal</li><li>ADC</li><li>Capacitive Sensing</li><li>Touch Screens</li><li>LCD Displays</li><li>Operating Systems</li><li>Algorithms</li>
+            </ul>
+            
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               Capacitive Touch Stack with Haptic Feedback
-              
             </h3>
             <p>Creating in house capacitive touch stacks for use in capacitive touch based steering wheel switches, touch based displays or touchpads. The stack consisted of CAPS, CSBN, TSDS, SLID, TPAD, GDET and SENS modules which are Capacitive Sensing (low level layer which interfaces with the hardware and ADC peripherals), Baselining (baselining read ADC values over a period of time, applying filters and frequency hopping), Touch State Detection System (determining winning buttons in a group based touch steering wheel switches), Slider (detecting slider position in a touch based linear slider sensor with center of mass detection), Touch Pad (detecting multi-finger X, Y positions on a 2D touchpad with multiplexed NxM matrix), Gesture Detection (detecting 2D simple and complex gestures on a touchpad such as tapping, double tapping, one/two finger swipe directions, one/two finger scrolling, zooming in/out and more) and finally SENS which is a controller module for the previous modules that initiates and processes each of the stack’s module in a pre-defined periodic task</p>
             
             
-          </section>
+            <ul class="resume-tags" aria-label="Tools used in Capacitive Touch Stack with Haptic Feedback">
+              <li>AVR</li><li>STM32</li><li>make</li><li>C</li><li>Embedded C</li><li>Bare Metal</li><li>ADC</li><li>Capacitive Sensing</li><li>Touch Pads</li><li>Operating Systems</li><li>Algorithms</li>
+            </ul>
+            
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               eShifter
-              
             </h3>
             <p>Creating applications for detecting/inducing transmission states in an electronic shift by wire shifter with priority-based processing for the P/R/N/D buttons and multi-push handling algorithms</p>
             
             
-          </section>
+            <ul class="resume-tags" aria-label="Tools used in eShifter">
+              <li>AVR</li><li>STM32</li><li>make</li><li>C</li><li>Embedded C</li><li>AUTOSAR</li><li>Operating Systems</li><li>Algorithms</li>
+            </ul>
+            
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               Smart Home Automation System
-              
             </h3>
             <p>a system where you can control your home’s appliances from your smartphone while in the home’s vicinity.</p>
             
             
-            <h4>Tools</h4>
-            <p>
-              
-              
-              Android,
-              
-              
-              
-              AVR,
-              
-              
-              
-              Raspberry Pi,
-              
-              
-              
-              relays,
-              
-              
-              
-              motors,
-              
-              
-              
-              Bluetooth,
-              
-              
-              
-              Embedded C,
-              
-              
-              
-              Java,
-              
-              
-              
-              Python.
-              
-              
-            </p>
+            <ul class="resume-tags" aria-label="Tools used in Smart Home Automation System">
+              <li>Android</li><li>AVR</li><li>Raspberry Pi</li><li>relays</li><li>motors</li><li>Bluetooth</li><li>Embedded C</li><li>Java</li><li>Python</li>
+            </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               Smart Home Security and Monitoring System
-              
             </h3>
             <p>a system where you can monitor your home via a website from anywhere in the world, the system also works automatically to protect your home from hazardous events such as fire, water floods and glass breakage</p>
             
             
-            <h4>Tools</h4>
-            <p>
-              
-              
-              Raspberry Pi,
-              
-              
-              
-              Arduino,
-              
-              
-              
-              relays,
-              
-              
-              
-              motors,
-              
-              
-              
-              solenoids,
-              
-              
-              
-              temperature / pressure sensors,
-              
-              
-              
-              Java,
-              
-              
-              
-              ArduinoC,
-              
-              
-              
-              Python.
-              
-              
-            </p>
+            <ul class="resume-tags" aria-label="Tools used in Smart Home Security and Monitoring System">
+              <li>Raspberry Pi</li><li>Arduino</li><li>relays</li><li>motors</li><li>solenoids</li><li>temperature / pressure sensors</li><li>Java</li><li>ArduinoC</li><li>Python</li>
+            </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               Autonomous Mobile Robot
-              
             </h3>
             <p>a smart robot designed to play the game of capture the flag autonomously competing with other similar robots the, user can control the robot through his/her phone or a website manually or by giving it gps coordinates and letting the robot figure the best way to reach that point.</p>
             
             
-            <h4>Tools</h4>
-            <p>
-              
-              
-              Android,
-              
-              
-              
-              Raspberry Pi,
-              
-              
-              
-              GPS sensors,
-              
-              
-              
-              IMU sensors,
-              
-              
-              
-              motors,
-              
-              
-              
-              Java,
-              
-              
-              
-              PHP,
-              
-              
-              
-              Python.
-              
-              
-            </p>
+            <ul class="resume-tags" aria-label="Tools used in Autonomous Mobile Robot">
+              <li>Android</li><li>Raspberry Pi</li><li>GPS sensors</li><li>IMU sensors</li><li>motors</li><li>Java</li><li>PHP</li><li>Python</li>
+            </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               <a href="https://github.com/abdalmoniem/AVR4L">AVR4L</a>
-              
             </h3>
             <p>AVR4L aims to deliver an easy to use and user-friendly Integrated Development Environment for developing Codes for microcontrollers based on Atmel's AVR families. AVR4L is a Creative coding / Integrated Development Environment for Linux operating systems intended for AVR beginners as well as professionals, it has many features from professional IDEs as well as the simplicity of editing</p>
             
             
-            <h4>Tools</h4>
-            <p>
-              
-              
-              Linux,
-              
-              
-              
-              Bash,
-              
-              
-              
-              C,
-              
-              
-              
-              Java,
-              
-              
-              
-              avrdude,
-              
-              
-              
-              AVR-GCC,
-              
-              
-              
-              AVR.
-              
-              
-            </p>
+            <ul class="resume-tags" aria-label="Tools used in AVR4L">
+              <li>Linux</li><li>Bash</li><li>C</li><li>Java</li><li>avrdude</li><li>AVR-GCC</li><li>AVR</li>
+            </ul>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               <a href="https://sites.google.com/view/alfa-helwan/home">ALFA</a>
-              
             </h3>
             <p>ALFA is an Intelligent firefighting robotic system which helps extinguish fires and aid other human firefighters to accomplish this task quickly and swiftly with minimal losses, damages and most importantly saving lives. ALFA is an Acronym of Air and Land Firefighting Agents, it features a flying robot that is the brains of the system, scouts the area, scans and maps the environment, communicates with other robots and allocates tasks. It also features a group of ground bound robots that act as the muscles of the system, they are responsible for extinguishing the fire and navigating about the environment.</p>
             
             
-            <h4>Tools</h4>
-            <p>
-              
-              
-              IMU,
-              
-              
-              
-              GPS Sensors,
-              
-              
-              
-              Motors,
-              
-              
-              
-              ROS,
-              
-              
-              
-              Gazebo,
-              
-              
-              
-              RViz,
-              
-              
-              
-              OpenCV,
-              
-              
-              
-              Computer Vision,
-              
-              
-              
-              AI,
-              
-              
-              
-              Linux,
-              
-              
-              
-              Bash,
-              
-              
-              
-              C++,
-              
-              
-              
-              Python.
-              
-              
-            </p>
+            <ul class="resume-tags" aria-label="Tools used in ALFA">
+              <li>IMU</li><li>GPS Sensors</li><li>Motors</li><li>ROS</li><li>Gazebo</li><li>RViz</li><li>OpenCV</li><li>Computer Vision</li><li>AI</li><li>Linux</li><li>Bash</li><li>C++</li><li>Python</li>
+            </ul>
             
-          </section>
+          </article>
           
         </section>
         
-      </main>
 
-      <!-- Sidebar Section -->
-      <aside>
         
-        <section>
-          <h2 class="section-heading">Education</h2>
+        <section class="resume-section link-section" aria-labelledby="volunteer-title">
+          <h2 id="volunteer-title">Volunteer Experience</h2>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
-              <a href="https://www.helwan.edu.eg">Helwan University</a>
-              
+              HR Member
+              at Flickers
             </h3>
-            <p class="section-label"><b><i>Helwan, Egypt</i></b></p>
             
-            <h4>Degrees</h4>
-            <ul>
+            <p class="resume-meta"><b><i>Sep/2015</i></b> — <b><i>Aug/2015</i></b></p>
+            
+            <p>Flickers is a student organization that aims to bridge the gab between school and job market in Egypt for the students of variant majors</p>
+            
+          </article>
+          
+          <article class="resume-entry">
+            <h3>
+              HR Executive Assistant
+              at Flickers
+            </h3>
+            
+            <p class="resume-meta"><b><i>Aug/2015</i></b> — <b><i>Sep/2017</i></b></p>
+            
+            <p>Flickers is a student organization that aims to bridge the gab between school and job market in Egypt for the students of variant majors</p>
+            
+          </article>
+          
+          <article class="resume-entry">
+            <h3>
+              Technical Mentor
+              at NASA Space Apps - Cairo
+            </h3>
+            
+            <p class="resume-meta"><b><i>Oct/2019</i></b> — <b><i>Oct/2019</i></b></p>
+            
+            <p>Participated as a mobile apps and ROS developers’ mentor</p>
+            
+          </article>
+          
+        </section>
+        
+      </div>
+
+      <aside class="resume-aside">
+        
+        <section class="resume-section link-section" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          
+          <article class="resume-entry">
+            <h3>
+              <a href="https://www.helwan.edu.eg">Helwan University</a>
+            </h3>
+            <p class="resume-meta"><b><i>Helwan, Egypt</i></b></p>
+            
+            <ul class="resume-list">
               <li>Bachelor of Engineering</li>
             </ul>
             
             
             
-            <p>
-              
-              
-              
-            <p class="section-label"><b><i>Sep/2012</i></b> - <b><i>Sep/2017</i></b></p>
             
-            </p>
+            <p class="resume-meta"><b><i>Sep/2012</i></b> — <b><i>Sep/2017</i></b></p>
             
-          </section>
+          </article>
           
-          <section>
+          <article class="resume-entry">
             <h3>
-              
               <a href="https://www.calpoly.edu">California Polytechnic State University</a>
-              
             </h3>
-            <p class="section-label"><b><i>California, USA</i></b></p>
+            <p class="resume-meta"><b><i>California, USA</i></b></p>
             
-            <h4>Degrees</h4>
-            <ul>
+            <ul class="resume-list">
               <li>Training in Robotics</li>
             </ul>
             
             
             
-            <p>
-              
-              
-              
-            <p class="section-label"><b><i>Jul/2016</i></b> - <b><i>Aug/2016</i></b></p>
             
-            </p>
+            <p class="resume-meta"><b><i>Jul/2016</i></b> — <b><i>Aug/2016</i></b></p>
             
-          </section>
+          </article>
           
         </section>
         
 
         
-        <section>
-          <h2 class="section-heading">Skills</h2>
-          <ul class="unstyled-list">
+        <section class="resume-section link-section" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skills</h2>
+          <ul class="resume-skills">
+            
             
             <li>
-              <h3>Robotics</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Robotics</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Robotics proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>ROS</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>ROS</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="ROS proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Gazebo</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Gazebo</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Gazebo proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>RViz</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>RViz</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="RViz proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>OpenCV</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-60" role="meter"
-                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">60%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>OpenCV</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="60" aria-valuemin="0"
+                aria-valuemax="100" aria-label="OpenCV proficiency 60 percent">
+                <span class="resume-skill-fill" style="width: 60%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Linux</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Linux</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Linux proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Bash/Shell Scripting</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-70" role="meter"
-                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">70%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Bash/Shell Scripting</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Bash/Shell Scripting proficiency 70 percent">
+                <span class="resume-skill-fill" style="width: 70%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Windows</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Windows</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Windows proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Batch Scripting</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Batch Scripting</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Batch Scripting proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>PowerShell Scripting</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>PowerShell Scripting</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="PowerShell Scripting proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Android</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Android</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Android proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>SQL</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>SQL</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="SQL proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Embedded Systems</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Embedded Systems</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Embedded Systems proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Zephyr</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-30" role="meter"
-                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">30%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Zephyr</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="30" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Zephyr proficiency 30 percent">
+                <span class="resume-skill-fill" style="width: 30%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Bluetooth LE</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-30" role="meter"
-                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">30%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Bluetooth LE</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="30" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Bluetooth LE proficiency 30 percent">
+                <span class="resume-skill-fill" style="width: 30%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Programming</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Programming</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Programming proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Visual BASIC</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-60" role="meter"
-                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">60%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Visual BASIC</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="60" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Visual BASIC proficiency 60 percent">
+                <span class="resume-skill-fill" style="width: 60%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>C</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>C</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="C proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>C++</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>C++</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="C++ proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>C#</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-50" role="meter"
-                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">50%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>C#</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100" aria-label="C# proficiency 50 percent">
+                <span class="resume-skill-fill" style="width: 50%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Java</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Java</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Java proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Kotlin</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-60" role="meter"
-                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">60%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Kotlin</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="60" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Kotlin proficiency 60 percent">
+                <span class="resume-skill-fill" style="width: 60%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Python</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Python</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Python proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Perl</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Perl</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Perl proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>GO</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>GO</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="GO proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Rust</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-70" role="meter"
-                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">70%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Rust</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Rust proficiency 70 percent">
+                <span class="resume-skill-fill" style="width: 70%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>JavaScript</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>JavaScript</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="JavaScript proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>TypeScript</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>TypeScript</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="TypeScript proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>PHP</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-80" role="meter"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">80%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>PHP</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" aria-label="PHP proficiency 80 percent">
+                <span class="resume-skill-fill" style="width: 80%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Swift</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Swift</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Swift proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Objective-C</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Objective-C</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Objective-C proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Scala</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Scala</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Scala proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
+            
             <li>
-              <h3>Lisp</h3>
-              <div class="skill-bar">
-                <div class="skill-bar-fill w-40" role="meter"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  
-                  <span class="skill-bar-fill-label">40%</span>
-                  
-                </div>
+              <div class="resume-skill-head">
+                <span>Lisp</span>
+                
+              </div>
+              <div class="resume-skill-bar" role="meter" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" aria-label="Lisp proficiency 40 percent">
+                <span class="resume-skill-fill" style="width: 40%"></span>
               </div>
             </li>
             
@@ -1009,75 +905,37 @@
         
 
         
-        <section>
-          <h2 class="section-heading">Languages</h2>
-          <ul class="unstyled-list">
+        <section class="resume-section" aria-labelledby="languages-title">
+          <h2 id="languages-title">Languages</h2>
+          <ul class="resume-tags">
             
-            <li>
-              <h3>Arabic</h3>
-              <p class="section-label">Native</p>
-            </li>
+            <li>Arabic · Native</li>
             
-            <li>
-              <h3>English</h3>
-              <p class="section-label">Professional</p>
-            </li>
+            <li>English · Professional</li>
             
           </ul>
         </section>
         
 
         
-        <section>
-          <h2 class="section-heading">Volunteer Experience</h2>
-          
-          <section>
-            <h3>
-              
-              HR Member at Flickers
-              
-            </h3>
-            
-            <p class="section-label"><b><i>Sep/2015</i></b> - <b><i>Aug/2015</i></b></p>
-            
-            <p>Flickers is a student organization that aims to bridge the gab between school and job market in Egypt for the students of variant majors</p>
-            
-          </section>
-          
-          <section>
-            <h3>
-              
-              HR Executive Assistant at Flickers
-              
-            </h3>
-            
-            <p class="section-label"><b><i>Aug/2015</i></b> - <b><i>Sep/2017</i></b></p>
-            
-            <p>Flickers is a student organization that aims to bridge the gab between school and job market in Egypt for the students of variant majors</p>
-            
-          </section>
-          
-          <section>
-            <h3>
-              
-              Technical Mentor at NASA Space Apps - Cairo
-              
-            </h3>
-            
-            <p class="section-label"><b><i>Oct/2019</i></b> - <b><i>Oct/2019</i></b></p>
-            
-            <p>Participated as a mobile apps and ROS developers’ mentor</p>
-            
-          </section>
-          
+        <section class="resume-section" aria-labelledby="interests-title">
+          <h2 id="interests-title">Interests</h2>
+          <ul class="resume-tags">
+            <li>Fishing</li>
+          </ul>
         </section>
         
 
         
       </aside>
     </div>
-  </div>
-  <script src="js/app.js"></script>
+
+    <footer class="resume-footer">
+      <p>© 2026 AbdElMoniem Osama Fathallah Mohamed ElHifnawy.</p>
+      <p><a href="index.html">Portfolio</a> · <a href="resume.pdf" download>Download PDF</a></p>
+    </footer>
+  </main>
+  <script src="js/theme.js" defer></script>
 </body>
 
 </html>

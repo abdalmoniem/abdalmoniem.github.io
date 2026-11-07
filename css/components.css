@@ -1,0 +1,85 @@
+/* Shared visual primitives used by both the portfolio and the web resume. */
+
+/* Link indicator: only links inside the work/projects/skills/education/volunteer sections. */
+.link-section a[href]::after {
+  content: " 🔗";
+  font-size: 0.72em;
+  line-height: 1;
+  vertical-align: super;
+  text-decoration: none;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+/* Contact chips shared by the index hero and the resume header. */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  margin: 0;
+  font-style: normal;
+}
+
+.contact-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.chip,
+.contact-location {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  padding: var(--sp-1) var(--sp-3);
+  color: var(--c-text);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  background: var(--c-bg-elev);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-pill);
+  transition: transform var(--t-fast), border-color var(--t-fast), background var(--t-fast);
+}
+
+a.chip:hover,
+a.chip:focus-visible {
+  color: var(--c-text);
+  background: var(--c-chip-bg);
+  border-color: var(--c-brand);
+  transform: translateY(-1px);
+}
+
+.contact-location {
+  color: var(--c-muted);
+}
+
+/* Theme toggle button shared by both pages. */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  color: var(--c-text);
+  background: transparent;
+  border: 1px solid var(--c-border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: var(--c-chip-bg);
+  border-color: var(--c-brand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.chip:hover,
+  a.chip:focus-visible {
+    transform: none;
+  }
+}

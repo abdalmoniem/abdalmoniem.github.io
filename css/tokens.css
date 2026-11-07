@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light;
+
+  --c-bg: #f8fafc;
+  --c-bg-elev: #ffffff;
+  --c-text: #0f172a;
+  --c-muted: #475569;
+  --c-brand: #6366f1;
+  --c-brand-strong: #4f46e5;
+  --c-accent: #06b6d4;
+  --c-border: #e2e8f0;
+  --c-chip-bg: rgba(99, 102, 241, 0.1);
+  --c-chip-border: rgba(99, 102, 241, 0.22);
+  --c-shadow: 15, 23, 42;
+  --c-hero-grad-1: #6366f1;
+  --c-hero-grad-2: #06b6d4;
+  --c-danger: #dc2626;
+
+  --font-heading: "Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Nunito", "Segoe UI", Helvetica, Arial, sans-serif;
+
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.9rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.15rem;
+  --fs-xl: 1.45rem;
+  --fs-2xl: 1.9rem;
+  --fs-hero: clamp(2.35rem, 6vw, 3.6rem);
+
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+
+  --t-fast: 150ms;
+  --t-med: 300ms;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  --container: 1180px;
+  --nav-h: 68px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --c-bg: #0b1120;
+  --c-bg-elev: #111a2e;
+  --c-text: #e2e8f0;
+  --c-muted: #94a3b8;
+  --c-brand: #818cf8;
+  --c-brand-strong: #a5b4fc;
+  --c-accent: #22d3ee;
+  --c-border: #1e293b;
+  --c-chip-bg: rgba(129, 140, 248, 0.15);
+  --c-chip-border: rgba(129, 140, 248, 0.3);
+  --c-shadow: 0, 0, 0;
+  --c-hero-grad-1: #4f46e5;
+  --c-hero-grad-2: #0891b2;
+  --c-danger: #f87171;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --c-bg: #0b1120;
+    --c-bg-elev: #111a2e;
+    --c-text: #e2e8f0;
+    --c-muted: #94a3b8;
+    --c-brand: #818cf8;
+    --c-brand-strong: #a5b4fc;
+    --c-accent: #22d3ee;
+    --c-border: #1e293b;
+    --c-chip-bg: rgba(129, 140, 248, 0.15);
+    --c-chip-border: rgba(129, 140, 248, 0.3);
+    --c-shadow: 0, 0, 0;
+    --c-hero-grad-1: #4f46e5;
+    --c-hero-grad-2: #0891b2;
+    --c-danger: #f87171;
+  }
+}

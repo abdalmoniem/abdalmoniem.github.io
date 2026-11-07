@@ -1,0 +1,394 @@
+/*
+ * Styles for the ATS-friendly PDF resume only (rendered by WeasyPrint with
+ * media_type="screen", so @media print rules are ignored; all print layout
+ * lives in @page here).
+ *
+ * WeasyPrint feature notes — deliberately used / deliberately avoided:
+ *   - Used (supported): border-radius, linear-gradient, inline-block,
+ *     multi-column flow, tables, @page margin boxes + counters,
+ *     break-after: avoid, break-inside: avoid, letter-spacing, ::before/::after.
+ *   - Avoided (unsupported/broken): box-shadow, flex gap, grid,
+ *     backdrop-filter, clip-path, position: fixed, filter effects.
+ *
+ * Every grid keeps its own natural height: project cards flow through two
+ * independent columns (staggered masonry), while Education/Volunteer and
+ * Languages/Interests sit in aligned two-column rows directly under the
+ * summary. A short card never leaves a row-sized hole inside the projects grid.
+ */
+
+/* ---- Page setup -------------------------------------------------------- */
+
+@page {
+  size: A4;
+  /* Minimum usable print margins: maximizes the text area. */
+  margin: 0.25in;
+
+  @bottom-center {
+    content: "Page " counter(page) " of " counter(pages);
+    color: #94a3b8;
+    font-size: 8pt;
+    font-family: "Nunito", "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+}
+
+/* ---- Base typography ---------------------------------------------------- */
+
+html {
+  font-size: 10pt;
+}
+
+body {
+  font-family: "Nunito", "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.38;
+  color: #334155;
+  background-color: #ffffff;
+  orphans: 2;
+  widows: 2;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", "Nunito", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25;
+  break-after: avoid;
+  orphans: 2;
+  widows: 2;
+}
+
+p {
+  margin: 0.05in 0;
+  orphans: 2;
+  widows: 2;
+}
+
+address {
+  font-style: normal;
+}
+
+/* ---- Plain-text header (no card, no photo) ------------------------------- */
+
+.masthead {
+  margin: 0 0 8pt;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+  font-size: 20pt;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1e1b4b;
+  line-height: 1.12;
+}
+
+.role {
+  margin: 2pt 0 4pt;
+  font-size: 10.5pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #4f46e5;
+}
+
+.contact {
+  margin: 2pt 0 0;
+}
+
+.contact-line {
+  margin: 1pt 0;
+  font-size: 9.2pt;
+  color: #475569;
+}
+
+.contact-line a {
+  color: #3730a3;
+  text-decoration: none;
+}
+
+.contact-location {
+  color: #475569;
+}
+
+.dot-sep {
+  margin: 0 3pt;
+  color: #94a3b8;
+}
+
+/* Social links are clickable text plus the local SVG icon from templates/img. */
+.social-links {
+  margin: 4pt 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10pt 2pt 0;
+}
+
+.social-links a {
+  color: #3730a3;
+  font-size: 9pt;
+  text-decoration: none;
+}
+
+.social-links svg {
+  width: 9pt;
+  height: 9pt;
+  margin-right: 2.5pt;
+  vertical-align: -1pt !important;
+}
+
+.summary {
+  margin: 6pt 0 0;
+  text-align: left;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #334155;
+}
+
+/* ---- Section titles ------------------------------------------------------ */
+
+.section-title {
+  position: relative;
+  margin: 12pt 0 7pt;
+  padding: 0 0 3pt;
+  font-size: 10.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #4f46e5;
+  border-bottom: 1.2pt solid #e0e7ff;
+}
+
+/* Subtle cyan→indigo accent bar riding on the title's bottom border. */
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.9pt;
+  width: 24pt;
+  height: 3pt;
+  background-image: linear-gradient(90deg, #06b6d4, #4f46e5);
+  border-radius: 2pt;
+}
+
+/* ---- Aligned pairs (Education/Volunteer, Languages/Interests) ------------- */
+
+.pairs {
+  width: 100%;
+  margin: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.pairs tr:first-child .section-title {
+  margin-top: 0;
+}
+
+.pair-cell {
+  width: 50%;
+  vertical-align: top;
+  padding: 0 9pt 0 0;
+}
+
+.pair-cell + .pair-cell {
+  padding: 0 0 0 9pt;
+}
+
+.pair-cell:only-child {
+  width: 100%;
+  padding-right: 0;
+}
+
+/* ---- Timeline entries ----------------------------------------------------- */
+
+.entry {
+  position: relative;
+  margin: 0 0 9pt;
+  padding: 0 0 0 12pt;
+  border-left: 1pt solid #e0e7ff;
+  /* Keep one item on one page. */
+  break-inside: avoid;
+}
+
+/* Indigo timeline dot sitting on the entry's left rule. */
+.entry::before {
+  content: "";
+  position: absolute;
+  top: 3.5pt;
+  left: -5pt;
+  width: 6pt;
+  height: 6pt;
+  border-radius: 50%;
+  background-color: #4f46e5;
+  border: 1.5pt solid #ffffff;
+}
+
+.entry-title {
+  margin: 0 0 1pt;
+  font-size: 10.6pt;
+  font-weight: 700;
+  color: #111827;
+}
+
+.entry-title a {
+  color: #3730a3;
+  text-decoration: none;
+}
+
+.entry-meta {
+  margin: 0 0 3pt;
+  font-size: 8.9pt;
+  color: #64748b;
+  break-after: avoid;
+}
+
+.entry-summary {
+  margin: 0 0 3pt;
+  font-size: 9.2pt;
+  color: #334155;
+}
+
+.entry-subtitle {
+  margin: 4pt 0 2pt;
+  font-size: 9pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+/* ---- Highlight lists ------------------------------------------------------ */
+
+.entry-highlights {
+  margin: 0 0 3pt;
+  padding-left: 0.17in;
+  list-style-type: disc;
+}
+
+.entry-highlights li {
+  margin-bottom: 2pt;
+  font-size: 9.2pt;
+  color: #334155;
+  break-inside: avoid;
+  orphans: 2;
+  widows: 2;
+}
+
+/* ---- Chips (tools, languages, interests) ---------------------------------- */
+
+.chips {
+  margin: 2pt 0 0;
+}
+
+.chip {
+  display: inline-block;
+  margin: 0 2.5pt 2.5pt 0;
+  padding: 1pt 6pt;
+  background-color: #eef2ff;
+  border: 0.6pt solid #c7d2fe;
+  border-radius: 999pt;
+  font-size: 8.2pt;
+  color: #3730a3;
+}
+
+/* ---- Projects: staggered two-column masonry ------------------------------- */
+
+.project-columns {
+  column-count: 2;
+  column-gap: 10pt;
+}
+
+.project-card {
+  margin: 0 0 8pt;
+  padding: 7pt 9pt;
+  background-color: #f8faff;
+  border: 0.75pt solid #e0e7ff;
+  border-radius: 6pt;
+  break-inside: avoid;
+}
+
+.project-card .entry-title {
+  font-size: 10.2pt;
+}
+
+.project-card .entry-summary {
+  font-size: 9pt;
+}
+
+/* ---- Skills: four compact staggered columns ------------------------------- */
+
+.skills {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.skill {
+  display: inline-block;
+  width: 23.5%;
+  margin: 0 0.75% 5pt;
+  vertical-align: top;
+  font-size: 9pt;
+  break-inside: avoid;
+}
+
+.skill-name {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #111827;
+}
+
+.skill-level {
+  margin-left: 3pt;
+  font-size: 8pt;
+  color: #64748b;
+}
+
+.skill-track {
+  display: block;
+  height: 3.5pt;
+  margin-top: 2pt;
+  background-color: #e2e8f0;
+  border-radius: 999pt;
+}
+
+.skill-fill {
+  display: block;
+  height: 3.5pt;
+  background-image: linear-gradient(90deg, #4f46e5, #06b6d4);
+  border-radius: 999pt;
+}
+
+/* ---- Links ------------------------------------------------------------------ */
+
+a {
+  color: #3730a3;
+  text-decoration: none;
+}
+
+/*
+ * Link indicator: only links inside the work/projects/skills/education/volunteer
+ * sections. A small local SVG chain glyph (no emoji, no extra text in the ATS
+ * text stream). Kept as a background image (longhand properties for reliable
+ * WeasyPrint parsing).
+ *
+ * Fallback if background-image rendering fails in a renderer, swap to:
+ *   .link-section a[href]::after { content: url("../img/link.svg");
+ *                    display: inline-block; width: 8pt; height: 8pt;
+ *                    margin-left: 3pt; vertical-align: -1pt; }
+ */
+.link-section a[href]::after {
+  content: "";
+  display: inline-block;
+  width: 8pt;
+  height: 8pt;
+  margin-left: 3pt;
+  vertical-align: -1pt;
+  background-image: url("../img/link.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
