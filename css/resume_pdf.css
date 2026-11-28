@@ -392,3 +392,22 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+/*
+ * Manual pagination (PDF via WeasyPrint uses screen CSS — these apply outside @media print).
+ * Add class to a section (or other block) in resume_pdf_template.html when you want a split.
+ */
+.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+
+.page-break-after {
+  break-after: page;
+  page-break-after: always;
+}
+
+.page-break-avoid {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
